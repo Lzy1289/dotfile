@@ -2,8 +2,7 @@
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 Import-Module posh-git
-$omp_config = Join-Path $PSScriptRoot ".\clean-detailed.omp.json"
-oh-my-posh --init --shell pwsh --config $omp_config | Invoke-Expression
+oh-my-posh --init --shell pwsh --config 'https://raw.githubusercontent.com/Lzy1289/dotfile/master/powershell/clean-detailed.omp.json' | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 
